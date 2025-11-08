@@ -17,7 +17,7 @@
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.lbl_subtitulo1 = new System.Windows.Forms.Label();
             this.lbl_titulo1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCancelar2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrdens)).BeginInit();
             this.SuspendLayout();
             // 
@@ -28,7 +28,7 @@
             this.dgvOrdens.BackgroundColor = System.Drawing.Color.Lavender;
             this.dgvOrdens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOrdens.Location = new System.Drawing.Point(81, 170);
-            this.dgvOrdens.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvOrdens.Margin = new System.Windows.Forms.Padding(4);
             this.dgvOrdens.Name = "dgvOrdens";
             this.dgvOrdens.ReadOnly = true;
             this.dgvOrdens.RowHeadersWidth = 51;
@@ -42,7 +42,7 @@
             this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.Color.White;
             this.btnFechar.Location = new System.Drawing.Point(355, 681);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(4);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(162, 49);
             this.btnFechar.TabIndex = 2;
@@ -56,7 +56,7 @@
             this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtualizar.ForeColor = System.Drawing.Color.White;
             this.btnAtualizar.Location = new System.Drawing.Point(580, 680);
-            this.btnAtualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAtualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(160, 49);
             this.btnAtualizar.TabIndex = 1;
@@ -88,18 +88,19 @@
             this.lbl_titulo1.TabIndex = 12;
             this.lbl_titulo1.Text = "TechTitans - Manutenção Informática";
             // 
-            // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(799, 679);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 49);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = false;
+            // btnCancelar2
+            this.btnCancelar2.BackColor = System.Drawing.Color.Red;
+            this.btnCancelar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar2.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar2.Location = new System.Drawing.Point(799, 679);
+            this.btnCancelar2.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar2.Name = "btnCancelar2";
+            this.btnCancelar2.Size = new System.Drawing.Size(162, 49);
+            this.btnCancelar2.TabIndex = 13;
+            this.btnCancelar2.Text = "Cancelar";
+            this.btnCancelar2.UseVisualStyleBackColor = false;
+            this.btnCancelar2.Click += new System.EventHandler(this.btnCancelar2_Click);
             // 
             // frmFecharOrdens
             // 
@@ -107,13 +108,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TechTitans_Info.Properties.Resources.fundo_azul;
             this.ClientSize = new System.Drawing.Size(1288, 779);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCancelar2);
             this.Controls.Add(this.lbl_subtitulo1);
             this.Controls.Add(this.lbl_titulo1);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.dgvOrdens);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmFecharOrdens";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fechar Ordens - TechTitans OS";
@@ -129,6 +130,6 @@
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Label lbl_subtitulo1;
         private System.Windows.Forms.Label lbl_titulo1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCancelar2;
     }
 }

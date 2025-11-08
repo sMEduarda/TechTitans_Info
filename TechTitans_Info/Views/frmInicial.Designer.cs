@@ -119,7 +119,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.BackgroundImage = global::TechTitans_Info.Properties.Resources.fundo_azul;
-            this.ClientSize = new System.Drawing.Size(1395, 659);
+            this.ClientSize = new System.Drawing.Size(1412, 652);
             this.Controls.Add(this.btnFecharOrdens);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEstoque);

@@ -74,5 +74,10 @@ namespace TechTitans_Info.Views
         {
             CarregarOrdensAbertas();
         }
+
+        private void btnCancelar2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

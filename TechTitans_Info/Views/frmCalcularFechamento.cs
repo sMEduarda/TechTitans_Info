@@ -22,7 +22,6 @@ namespace TechTitans_Info.Views
             using (var db = new AppDbContext())
             {
                 var os = db.OrdensServico.Find(_osId);
-                lblOS.Text = $"OS #{os.Id} - {os.Solicitante}";
                 lblData.Text = $"Abertura: {os.DataAbertura:dd/MM/yyyy}";
             }
 
