@@ -27,7 +27,7 @@
             this.dgvOrdens.AllowUserToDeleteRows = false;
             this.dgvOrdens.BackgroundColor = System.Drawing.Color.Lavender;
             this.dgvOrdens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOrdens.Location = new System.Drawing.Point(81, 170);
+            this.dgvOrdens.Location = new System.Drawing.Point(97, 168);
             this.dgvOrdens.Margin = new System.Windows.Forms.Padding(4);
             this.dgvOrdens.Name = "dgvOrdens";
             this.dgvOrdens.ReadOnly = true;
@@ -44,7 +44,7 @@
             this.btnFechar.Location = new System.Drawing.Point(355, 681);
             this.btnFechar.Margin = new System.Windows.Forms.Padding(4);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(162, 49);
+            this.btnFechar.Size = new System.Drawing.Size(162, 57);
             this.btnFechar.TabIndex = 2;
             this.btnFechar.Text = "Fechar OS";
             this.btnFechar.UseVisualStyleBackColor = false;
@@ -58,7 +58,7 @@
             this.btnAtualizar.Location = new System.Drawing.Point(580, 680);
             this.btnAtualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(160, 49);
+            this.btnAtualizar.Size = new System.Drawing.Size(160, 58);
             this.btnAtualizar.TabIndex = 1;
             this.btnAtualizar.Text = "Atualizar Lista";
             this.btnAtualizar.UseVisualStyleBackColor = false;
@@ -88,15 +88,15 @@
             this.lbl_titulo1.TabIndex = 12;
             this.lbl_titulo1.Text = "TechTitans - Manutenção Informática";
             // 
-            // 
             // btnCancelar2
+            // 
             this.btnCancelar2.BackColor = System.Drawing.Color.Red;
             this.btnCancelar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar2.ForeColor = System.Drawing.Color.White;
             this.btnCancelar2.Location = new System.Drawing.Point(799, 679);
             this.btnCancelar2.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar2.Name = "btnCancelar2";
-            this.btnCancelar2.Size = new System.Drawing.Size(162, 49);
+            this.btnCancelar2.Size = new System.Drawing.Size(162, 59);
             this.btnCancelar2.TabIndex = 13;
             this.btnCancelar2.Text = "Cancelar";
             this.btnCancelar2.UseVisualStyleBackColor = false;
@@ -107,7 +107,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TechTitans_Info.Properties.Resources.fundo_azul;
-            this.ClientSize = new System.Drawing.Size(1288, 779);
+            this.ClientSize = new System.Drawing.Size(1326, 779);
             this.Controls.Add(this.btnCancelar2);
             this.Controls.Add(this.lbl_subtitulo1);
             this.Controls.Add(this.lbl_titulo1);

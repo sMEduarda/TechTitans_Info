@@ -92,5 +92,13 @@ namespace TechTitans_Info.Views
                 this.Close();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var frmInicial = new frmInicial();
+            frmInicial.Show();
+        }
+
     }
 }

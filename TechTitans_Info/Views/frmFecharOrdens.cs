@@ -23,30 +23,39 @@ namespace TechTitans_Info.Views
             using (var db = new AppDbContext())
             {
                 var ordens = db.OrdensServico
-                    .Where(os => os.StatusId != 3) // != Fechado
+                    .Where(os => os.StatusId != 3) // 3 = Fechado
                     .Select(os => new
                     {
                         os.Id,
                         os.Solicitante,
                         Equipamento = os.TipoEquipamento.Nome,
+                        Prioridade = os.Prioridade.Nome,
+                        Status = os.Status.Nome,
                         os.DataAbertura,
-                        ValorPecas = os.Itens.Sum(i => i.QuantidadeUsada * i.ValorUnitario),
-                        Status = os.Status.Nome
+                        ValorPecas = os.Itens.Sum(i =>
+                            (decimal?)i.QuantidadeUsada * (decimal?)i.ValorUnitario) ?? 0
                     })
                     .OrderBy(os => os.DataAbertura)
                     .ToList();
 
                 dgvOrdens.DataSource = ordens;
+
+                // Ajuste de cabeçalhos
                 dgvOrdens.Columns["Id"].HeaderText = "OS #";
                 dgvOrdens.Columns["Solicitante"].HeaderText = "Cliente";
-                dgvOrdens.Columns["Equipamento"].HeaderText = "Tipo";
-                dgvOrdens.Columns["DataAbertura"].HeaderText = "Abertura";
-                dgvOrdens.Columns["ValorPecas"].HeaderText = "Peças (R$)";
+                dgvOrdens.Columns["Equipamento"].HeaderText = "Equipamento";
+                dgvOrdens.Columns["Prioridade"].HeaderText = "Prioridade";
                 dgvOrdens.Columns["Status"].HeaderText = "Status";
+                dgvOrdens.Columns["DataAbertura"].HeaderText = "Data de Abertura";
+                dgvOrdens.Columns["ValorPecas"].HeaderText = "Valor das Peças (R$)";
 
-                // Formatar colunas
+                // Formatação visual
                 dgvOrdens.Columns["DataAbertura"].DefaultCellStyle.Format = "dd/MM/yyyy";
                 dgvOrdens.Columns["ValorPecas"].DefaultCellStyle.Format = "C2";
+
+                // Ajustar largura das colunas para caber o texto
+                dgvOrdens.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                dgvOrdens.Columns["Solicitante"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
         }
 
@@ -59,12 +68,12 @@ namespace TechTitans_Info.Views
             }
 
             int osId = (int)dgvOrdens.CurrentRow.Cells["Id"].Value;
-            decimal valorPecas = (decimal)dgvOrdens.CurrentRow.Cells["ValorPecas"].Value;
+            decimal valorPecas = Convert.ToDecimal(dgvOrdens.CurrentRow.Cells["ValorPecas"].Value ?? 0);
 
             var frm = new frmCalcularFechamento(osId, valorPecas);
             if (frm.ShowDialog() == DialogResult.OK)
             {
-                CarregarOrdensAbertas(); // Atualiza lista
+                CarregarOrdensAbertas();
                 MessageBox.Show("Ordem de Serviço fechada com sucesso!", "Sucesso",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -77,7 +86,10 @@ namespace TechTitans_Info.Views
 
         private void btnCancelar2_Click(object sender, EventArgs e)
         {
-
+            // Voltar para o formulário inicial
+            var frmInicial = new frmInicial();
+            frmInicial.Show();
+            this.Close();
         }
     }
 }

@@ -99,5 +99,42 @@ namespace TechTitans_Info.Views
                 this.Close();
             }
         }
+
+        // 🔹 Botão 2: limpar todos os campos
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Limpar campos de texto
+            txtSolicitante.Clear();
+            txtResponsavel.Clear();
+            txtTelefone.Clear();
+            txtEmail.Clear();
+            txtMarca.Clear();
+            txtSerie.Clear();
+            txtProblema.Clear();
+
+            // Resetar selects (combos)
+            if (cmbTipoEquipamento.Items.Count > 0)
+                cmbTipoEquipamento.SelectedIndex = 0;
+
+            if (cmbPrioridade.Items.Count > 0)
+                cmbPrioridade.SelectedIndex = 0;
+
+            if (cmbStatus.Items.Count > 0)
+                cmbStatus.SelectedValue = 1; // volta para "Aberto"
+
+            // Redefinir data
+            dtpDataAbertura.Value = DateTime.Today;
+
+            // Exibir confirmação
+            MessageBox.Show("Campos limpos com sucesso!", "Limpar formulário",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var frmInicial = new frmInicial();
+            frmInicial.Show();
+        }
     }
 }

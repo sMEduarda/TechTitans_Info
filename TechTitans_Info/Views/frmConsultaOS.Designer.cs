@@ -23,6 +23,7 @@
             this.lbl_titulo1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOS)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +67,7 @@
             this.btnAdicionarPeca.BackColor = System.Drawing.Color.LimeGreen;
             this.btnAdicionarPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdicionarPeca.ForeColor = System.Drawing.Color.White;
-            this.btnAdicionarPeca.Location = new System.Drawing.Point(473, 692);
+            this.btnAdicionarPeca.Location = new System.Drawing.Point(397, 693);
             this.btnAdicionarPeca.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdicionarPeca.Name = "btnAdicionarPeca";
             this.btnAdicionarPeca.Size = new System.Drawing.Size(185, 46);
@@ -116,20 +117,36 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(729, 692);
+            this.button1.Location = new System.Drawing.Point(937, 693);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(185, 46);
             this.button1.TabIndex = 12;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Gold;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(667, 693);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(185, 46);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Atualizar Item";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmConsultaOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TechTitans_Info.Properties.Resources.fundo_azul;
-            this.ClientSize = new System.Drawing.Size(1523, 787);
+            this.ClientSize = new System.Drawing.Size(1543, 787);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_subtitulo1);
@@ -156,5 +173,6 @@
         private System.Windows.Forms.Label lbl_titulo1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

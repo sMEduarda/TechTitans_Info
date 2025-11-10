@@ -34,6 +34,11 @@ namespace TechTitans_Info.Views
                     .ToList();
 
                 dgvEstoque.DataSource = dados;
+
+                // ✅ Ajuste automático das colunas
+                dgvEstoque.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dgvEstoque.Columns["Nome"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                dgvEstoque.Columns["Nome"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             }
         }
 
@@ -57,10 +62,18 @@ namespace TechTitans_Info.Views
                 {
                     material.QuantidadeDisponivel = novaQtd;
                     db.SaveChanges();
-                    MessageBox.Show("Estoque atualizado!");
+                    MessageBox.Show("Estoque atualizado com sucesso!");
                     CarregarEstoque();
                 }
             }
+        }
+
+      
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var frmInicial = new frmInicial();
+            frmInicial.Show();
         }
     }
 }

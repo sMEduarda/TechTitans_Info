@@ -41,7 +41,7 @@
             this.btnCadastrarOS.BackColor = System.Drawing.Color.Lavender;
             this.btnCadastrarOS.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarOS.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnCadastrarOS.Location = new System.Drawing.Point(119, 191);
+            this.btnCadastrarOS.Location = new System.Drawing.Point(163, 168);
             this.btnCadastrarOS.Name = "btnCadastrarOS";
             this.btnCadastrarOS.Size = new System.Drawing.Size(493, 60);
             this.btnCadastrarOS.TabIndex = 0;
@@ -54,7 +54,7 @@
             this.btnConsultarOS.BackColor = System.Drawing.Color.Lavender;
             this.btnConsultarOS.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarOS.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnConsultarOS.Location = new System.Drawing.Point(694, 187);
+            this.btnConsultarOS.Location = new System.Drawing.Point(738, 164);
             this.btnConsultarOS.Name = "btnConsultarOS";
             this.btnConsultarOS.Size = new System.Drawing.Size(493, 60);
             this.btnConsultarOS.TabIndex = 1;
@@ -67,7 +67,7 @@
             this.btnCadastrarMaterial.BackColor = System.Drawing.Color.Lavender;
             this.btnCadastrarMaterial.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarMaterial.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnCadastrarMaterial.Location = new System.Drawing.Point(119, 315);
+            this.btnCadastrarMaterial.Location = new System.Drawing.Point(163, 292);
             this.btnCadastrarMaterial.Name = "btnCadastrarMaterial";
             this.btnCadastrarMaterial.Size = new System.Drawing.Size(493, 60);
             this.btnCadastrarMaterial.TabIndex = 2;
@@ -80,7 +80,7 @@
             this.btnEstoque.BackColor = System.Drawing.Color.Lavender;
             this.btnEstoque.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstoque.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnEstoque.Location = new System.Drawing.Point(694, 312);
+            this.btnEstoque.Location = new System.Drawing.Point(738, 289);
             this.btnEstoque.Name = "btnEstoque";
             this.btnEstoque.Size = new System.Drawing.Size(493, 60);
             this.btnEstoque.TabIndex = 3;
@@ -94,7 +94,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(77, 51);
+            this.label1.Location = new System.Drawing.Point(107, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1195, 69);
             this.label1.TabIndex = 4;
@@ -105,7 +105,7 @@
             this.btnFecharOrdens.BackColor = System.Drawing.Color.Lavender;
             this.btnFecharOrdens.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFecharOrdens.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnFecharOrdens.Location = new System.Drawing.Point(406, 447);
+            this.btnFecharOrdens.Location = new System.Drawing.Point(450, 424);
             this.btnFecharOrdens.Name = "btnFecharOrdens";
             this.btnFecharOrdens.Size = new System.Drawing.Size(493, 60);
             this.btnFecharOrdens.TabIndex = 5;
@@ -119,7 +119,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.BackgroundImage = global::TechTitans_Info.Properties.Resources.fundo_azul;
-            this.ClientSize = new System.Drawing.Size(1412, 652);
+            this.ClientSize = new System.Drawing.Size(1389, 652);
             this.Controls.Add(this.btnFecharOrdens);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEstoque);

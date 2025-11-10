@@ -22,7 +22,7 @@
             this.lbl_subtitulo1 = new System.Windows.Forms.Label();
             this.lbl_titulo1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_cancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstoque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNovaQuantidade)).BeginInit();
             this.SuspendLayout();
@@ -31,11 +31,11 @@
             // 
             this.dgvEstoque.BackgroundColor = System.Drawing.Color.Lavender;
             this.dgvEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEstoque.Location = new System.Drawing.Point(86, 183);
+            this.dgvEstoque.Location = new System.Drawing.Point(92, 180);
             this.dgvEstoque.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEstoque.Name = "dgvEstoque";
             this.dgvEstoque.RowHeadersWidth = 51;
-            this.dgvEstoque.Size = new System.Drawing.Size(1113, 407);
+            this.dgvEstoque.Size = new System.Drawing.Size(1101, 407);
             this.dgvEstoque.TabIndex = 0;
             // 
             // label1
@@ -80,11 +80,11 @@
             this.lbl_subtitulo1.BackColor = System.Drawing.Color.Transparent;
             this.lbl_subtitulo1.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Bold);
             this.lbl_subtitulo1.ForeColor = System.Drawing.Color.White;
-            this.lbl_subtitulo1.Location = new System.Drawing.Point(455, 123);
+            this.lbl_subtitulo1.Location = new System.Drawing.Point(440, 119);
             this.lbl_subtitulo1.Name = "lbl_subtitulo1";
-            this.lbl_subtitulo1.Size = new System.Drawing.Size(380, 32);
+            this.lbl_subtitulo1.Size = new System.Drawing.Size(432, 32);
             this.lbl_subtitulo1.TabIndex = 15;
-            this.lbl_subtitulo1.Text = "Fechar Ordem de Serviço";
+            this.lbl_subtitulo1.Text = "Ajustar Estoque de Materiais";
             // 
             // lbl_titulo1
             // 
@@ -110,26 +110,27 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Atualizar Quantidades";
             // 
-            // button1
+            // btn_cancel
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(669, 710);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 46);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_cancel.BackColor = System.Drawing.Color.Red;
+            this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.ForeColor = System.Drawing.Color.White;
+            this.btn_cancel.Location = new System.Drawing.Point(669, 710);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(128, 46);
+            this.btn_cancel.TabIndex = 18;
+            this.btn_cancel.Text = "Cancelar";
+            this.btn_cancel.UseVisualStyleBackColor = false;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // frmConsultaEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TechTitans_Info.Properties.Resources.fundo_azul;
-            this.ClientSize = new System.Drawing.Size(1291, 779);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1314, 779);
+            this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_subtitulo1);
             this.Controls.Add(this.lbl_titulo1);
@@ -155,6 +156,6 @@
         private System.Windows.Forms.Label lbl_subtitulo1;
         private System.Windows.Forms.Label lbl_titulo1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_cancel;
     }
 }

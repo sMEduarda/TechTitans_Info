@@ -46,9 +46,32 @@ namespace TechTitans_Info.Views
                 db.Materiais.Add(material);
                 db.SaveChanges();
 
-                MessageBox.Show("Material cadastrado com sucesso!");
+                MessageBox.Show("Material cadastrado com sucesso!", "Sucesso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
+        }
+
+        // 🔹 Botão 2: voltar para tela inicial
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var frmInicial = new frmInicial();
+            frmInicial.Show();
+        }
+
+        // 🔹 Botão 1: limpar todos os campos
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Limpar os campos de texto
+            txtNome.Clear();
+            txtTipo.Clear();
+            txtDescricao.Clear();
+
+
+            // Mensagem de confirmação
+            MessageBox.Show("Campos limpos com sucesso!", "Limpar formulário",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
