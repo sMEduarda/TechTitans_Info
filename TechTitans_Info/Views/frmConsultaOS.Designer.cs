@@ -131,12 +131,12 @@
             this.button2.BackColor = System.Drawing.Color.Gold;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(667, 693);
+            this.button2.Location = new System.Drawing.Point(639, 693);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(185, 46);
+            this.button2.Size = new System.Drawing.Size(237, 46);
             this.button2.TabIndex = 13;
-            this.button2.Text = "Atualizar Item";
+            this.button2.Text = "Atualizar Informações";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

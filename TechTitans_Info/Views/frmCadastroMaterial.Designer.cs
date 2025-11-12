@@ -40,7 +40,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(411, 224);
+            this.label1.Location = new System.Drawing.Point(353, 218);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 25);
@@ -50,7 +50,7 @@
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(495, 221);
+            this.txtNome.Location = new System.Drawing.Point(437, 215);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(436, 30);
@@ -62,7 +62,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(424, 291);
+            this.label2.Location = new System.Drawing.Point(366, 285);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 25);
@@ -72,7 +72,7 @@
             // txtTipo
             // 
             this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtTipo.Location = new System.Drawing.Point(495, 288);
+            this.txtTipo.Location = new System.Drawing.Point(437, 282);
             this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(436, 30);
@@ -84,7 +84,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(376, 358);
+            this.label3.Location = new System.Drawing.Point(318, 352);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 25);
@@ -94,7 +94,7 @@
             // txtDescricao
             // 
             this.txtDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtDescricao.Location = new System.Drawing.Point(495, 356);
+            this.txtDescricao.Location = new System.Drawing.Point(437, 350);
             this.txtDescricao.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
@@ -107,7 +107,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(417, 493);
+            this.label4.Location = new System.Drawing.Point(359, 487);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 25);
@@ -118,7 +118,7 @@
             // 
             this.numValor.DecimalPlaces = 2;
             this.numValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numValor.Location = new System.Drawing.Point(495, 488);
+            this.numValor.Location = new System.Drawing.Point(437, 482);
             this.numValor.Margin = new System.Windows.Forms.Padding(4);
             this.numValor.Minimum = new decimal(new int[] {
             1,
@@ -140,7 +140,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(664, 493);
+            this.label5.Location = new System.Drawing.Point(606, 487);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 25);
@@ -150,7 +150,7 @@
             // numQuantidade
             // 
             this.numQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numQuantidade.Location = new System.Drawing.Point(798, 488);
+            this.numQuantidade.Location = new System.Drawing.Point(740, 482);
             this.numQuantidade.Margin = new System.Windows.Forms.Padding(4);
             this.numQuantidade.Minimum = new decimal(new int[] {
             1,
@@ -171,7 +171,7 @@
             this.btnSalvar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(416, 571);
+            this.btnSalvar.Location = new System.Drawing.Point(358, 565);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(133, 46);
@@ -186,7 +186,7 @@
             this.lbl_subtitulo1.BackColor = System.Drawing.Color.Transparent;
             this.lbl_subtitulo1.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Bold);
             this.lbl_subtitulo1.ForeColor = System.Drawing.Color.White;
-            this.lbl_subtitulo1.Location = new System.Drawing.Point(514, 117);
+            this.lbl_subtitulo1.Location = new System.Drawing.Point(431, 117);
             this.lbl_subtitulo1.Name = "lbl_subtitulo1";
             this.lbl_subtitulo1.Size = new System.Drawing.Size(403, 32);
             this.lbl_subtitulo1.TabIndex = 11;
@@ -198,7 +198,7 @@
             this.lbl_titulo1.BackColor = System.Drawing.Color.Transparent;
             this.lbl_titulo1.Font = new System.Drawing.Font("Georgia", 25.8F, System.Drawing.FontStyle.Bold);
             this.lbl_titulo1.ForeColor = System.Drawing.Color.White;
-            this.lbl_titulo1.Location = new System.Drawing.Point(307, 35);
+            this.lbl_titulo1.Location = new System.Drawing.Point(196, 41);
             this.lbl_titulo1.Name = "lbl_titulo1";
             this.lbl_titulo1.Size = new System.Drawing.Size(859, 49);
             this.lbl_titulo1.TabIndex = 12;
@@ -209,7 +209,7 @@
             this.button1.BackColor = System.Drawing.Color.Gold;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(622, 571);
+            this.button1.Location = new System.Drawing.Point(564, 565);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(133, 46);
@@ -223,7 +223,7 @@
             this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(823, 570);
+            this.button2.Location = new System.Drawing.Point(765, 564);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(133, 46);
@@ -237,7 +237,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TechTitans_Info.Properties.Resources.fundo_azul;
-            this.ClientSize = new System.Drawing.Size(1319, 777);
+            this.ClientSize = new System.Drawing.Size(1270, 777);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl_subtitulo1);

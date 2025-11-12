@@ -32,7 +32,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(383, 230);
+            this.label1.Location = new System.Drawing.Point(216, 229);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 25);
@@ -44,10 +44,10 @@
             this.cmbMaterial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbMaterial.FormattingEnabled = true;
-            this.cmbMaterial.Location = new System.Drawing.Point(478, 226);
+            this.cmbMaterial.Location = new System.Drawing.Point(311, 225);
             this.cmbMaterial.Margin = new System.Windows.Forms.Padding(4);
             this.cmbMaterial.Name = "cmbMaterial";
-            this.cmbMaterial.Size = new System.Drawing.Size(372, 33);
+            this.cmbMaterial.Size = new System.Drawing.Size(596, 33);
             this.cmbMaterial.TabIndex = 1;
             // 
             // label2
@@ -56,7 +56,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(350, 302);
+            this.label2.Location = new System.Drawing.Point(183, 292);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 25);
@@ -66,7 +66,7 @@
             // numQuantidade
             // 
             this.numQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.numQuantidade.Location = new System.Drawing.Point(478, 298);
+            this.numQuantidade.Location = new System.Drawing.Point(311, 288);
             this.numQuantidade.Margin = new System.Windows.Forms.Padding(4);
             this.numQuantidade.Minimum = new decimal(new int[] {
             1,
@@ -74,7 +74,7 @@
             0,
             0});
             this.numQuantidade.Name = "numQuantidade";
-            this.numQuantidade.Size = new System.Drawing.Size(372, 30);
+            this.numQuantidade.Size = new System.Drawing.Size(119, 30);
             this.numQuantidade.TabIndex = 3;
             this.numQuantidade.Value = new decimal(new int[] {
             1,
@@ -87,7 +87,7 @@
             this.btnAdicionar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdicionar.ForeColor = System.Drawing.Color.White;
-            this.btnAdicionar.Location = new System.Drawing.Point(438, 389);
+            this.btnAdicionar.Location = new System.Drawing.Point(403, 384);
             this.btnAdicionar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(147, 45);
@@ -125,7 +125,7 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(648, 388);
+            this.button1.Location = new System.Drawing.Point(613, 383);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 45);
@@ -139,7 +139,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TechTitans_Info.Properties.Resources.fundo_azul;
-            this.ClientSize = new System.Drawing.Size(1240, 584);
+            this.ClientSize = new System.Drawing.Size(1216, 580);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl_subtitulo1);
             this.Controls.Add(this.lbl_titulo1);

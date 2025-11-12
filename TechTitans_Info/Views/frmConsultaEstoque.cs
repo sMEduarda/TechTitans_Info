@@ -18,11 +18,23 @@ namespace TechTitans_Info.Views
             CarregarEstoque();
         }
 
-        private void CarregarEstoque()
+        private void CarregarEstoque(string idFiltro = "", string nomeFiltro = "", string tipoFiltro = "")
         {
             using (var db = new AppDbContext())
             {
-                var dados = db.Materiais
+                var query = db.Materiais.AsQueryable();
+
+                // 🔎 Aplica os filtros
+                if (!string.IsNullOrWhiteSpace(idFiltro) && int.TryParse(idFiltro, out int id))
+                    query = query.Where(m => m.Id == id);
+
+                if (!string.IsNullOrWhiteSpace(nomeFiltro))
+                    query = query.Where(m => m.Nome.Contains(nomeFiltro));
+
+                if (!string.IsNullOrWhiteSpace(tipoFiltro))
+                    query = query.Where(m => m.Tipo.Contains(tipoFiltro));
+
+                var dados = query
                     .Select(m => new
                     {
                         m.Id,
@@ -40,6 +52,19 @@ namespace TechTitans_Info.Views
                 dgvEstoque.Columns["Nome"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 dgvEstoque.Columns["Nome"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             }
+        }
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            CarregarEstoque(txtFiltroId.Text, txtFiltroNome.Text, txtFiltroTipo.Text);
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtFiltroId.Clear();
+            txtFiltroNome.Clear();
+            txtFiltroTipo.Clear();
+            CarregarEstoque();
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)
@@ -68,7 +93,6 @@ namespace TechTitans_Info.Views
             }
         }
 
-      
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             this.Hide();
